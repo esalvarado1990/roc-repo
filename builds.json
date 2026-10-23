@@ -1,0 +1,155 @@
+{
+ "version": "1.0.0",
+ "builds": [
+  {
+   "id": "rocgold-lite",
+   "build": "Roc Gold",
+   "tier": "Lite",
+   "version": "1.0.0",
+   "file": "rocgold-lite-1.0.0.zip",
+   "size": 147864334,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/rocgold-lite-1.0.0.zip",
+   "desc": "The flagship. Exploding gorilla, black and gold, Day/Midday/Night schemes."
+  },
+  {
+   "id": "rocgold-medium",
+   "build": "Roc Gold",
+   "tier": "Medium",
+   "version": "1.0.0",
+   "file": "rocgold-medium-1.0.0.zip",
+   "size": 265149967,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/rocgold-medium-1.0.0.zip",
+   "desc": "The flagship. Exploding gorilla, black and gold, Day/Midday/Night schemes."
+  },
+  {
+   "id": "rocgold-powerhouse",
+   "build": "Roc Gold",
+   "tier": "Powerhouse",
+   "version": "1.0.0",
+   "file": "rocgold-powerhouse-1.0.0.zip",
+   "size": 265332298,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/rocgold-powerhouse-1.0.0.zip",
+   "desc": "The flagship. Exploding gorilla, black and gold, Day/Midday/Night schemes."
+  },
+  {
+   "id": "haunted-lite",
+   "build": "Haunted",
+   "tier": "Lite",
+   "version": "1.0.0",
+   "file": "haunted-lite-1.0.0.zip",
+   "size": 147201398,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/haunted-lite-1.0.0.zip",
+   "desc": "Paranormal. Ghosts, fog and candlelight in the old mansion hall."
+  },
+  {
+   "id": "haunted-medium",
+   "build": "Haunted",
+   "tier": "Medium",
+   "version": "1.0.0",
+   "file": "haunted-medium-1.0.0.zip",
+   "size": 264487031,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/haunted-medium-1.0.0.zip",
+   "desc": "Paranormal. Ghosts, fog and candlelight in the old mansion hall."
+  },
+  {
+   "id": "haunted-powerhouse",
+   "build": "Haunted",
+   "tier": "Powerhouse",
+   "version": "1.0.0",
+   "file": "haunted-powerhouse-1.0.0.zip",
+   "size": 264669362,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/haunted-powerhouse-1.0.0.zip",
+   "desc": "Paranormal. Ghosts, fog and candlelight in the old mansion hall."
+  },
+  {
+   "id": "nightroute-lite",
+   "build": "Night Route",
+   "tier": "Lite",
+   "version": "1.0.0",
+   "file": "nightroute-lite-1.0.0.zip",
+   "size": 147236896,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/nightroute-lite-1.0.0.zip",
+   "desc": "A moonlit route through the tall grass. Navy night, warm amber."
+  },
+  {
+   "id": "nightroute-medium",
+   "build": "Night Route",
+   "tier": "Medium",
+   "version": "1.0.0",
+   "file": "nightroute-medium-1.0.0.zip",
+   "size": 264522529,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/nightroute-medium-1.0.0.zip",
+   "desc": "A moonlit route through the tall grass. Navy night, warm amber."
+  },
+  {
+   "id": "nightroute-powerhouse",
+   "build": "Night Route",
+   "tier": "Powerhouse",
+   "version": "1.0.0",
+   "file": "nightroute-powerhouse-1.0.0.zip",
+   "size": 264704860,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/nightroute-powerhouse-1.0.0.zip",
+   "desc": "A moonlit route through the tall grass. Navy night, warm amber."
+  },
+  {
+   "id": "noirraven-lite",
+   "build": "Noir Raven",
+   "tier": "Lite",
+   "version": "1.0.0",
+   "file": "noirraven-lite-1.0.0.zip",
+   "size": 147128572,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/noirraven-lite-1.0.0.zip",
+   "desc": "The raven in the smoke. Quiet, minimal, expensive."
+  },
+  {
+   "id": "noirraven-medium",
+   "build": "Noir Raven",
+   "tier": "Medium",
+   "version": "1.0.0",
+   "file": "noirraven-medium-1.0.0.zip",
+   "size": 264414205,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/noirraven-medium-1.0.0.zip",
+   "desc": "The raven in the smoke. Quiet, minimal, expensive."
+  },
+  {
+   "id": "noirraven-powerhouse",
+   "build": "Noir Raven",
+   "tier": "Powerhouse",
+   "version": "1.0.0",
+   "file": "noirraven-powerhouse-1.0.0.zip",
+   "size": 264596536,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/noirraven-powerhouse-1.0.0.zip",
+   "desc": "The raven in the smoke. Quiet, minimal, expensive."
+  },
+  {
+   "id": "sesh-lite",
+   "build": "Sesh Lounge",
+   "tier": "Lite",
+   "version": "1.0.0",
+   "file": "sesh-lite-1.0.0.zip",
+   "size": 147179199,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/sesh-lite-1.0.0.zip",
+   "desc": "Emerald and amber. Low light, slow smoke, leather and wood."
+  },
+  {
+   "id": "sesh-medium",
+   "build": "Sesh Lounge",
+   "tier": "Medium",
+   "version": "1.0.0",
+   "file": "sesh-medium-1.0.0.zip",
+   "size": 264464832,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/sesh-medium-1.0.0.zip",
+   "desc": "Emerald and amber. Low light, slow smoke, leather and wood."
+  },
+  {
+   "id": "sesh-powerhouse",
+   "build": "Sesh Lounge",
+   "tier": "Powerhouse",
+   "version": "1.0.0",
+   "file": "sesh-powerhouse-1.0.0.zip",
+   "size": 264647163,
+   "url": "https://github.com/esalvarado1990/roc-repo/releases/download/v1.0.0/sesh-powerhouse-1.0.0.zip",
+   "desc": "Emerald and amber. Low light, slow smoke, leather and wood."
+  }
+ ]
+}
