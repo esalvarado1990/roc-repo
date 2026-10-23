@@ -43,4 +43,62 @@
   </extension>
 </addon>
 
+<addon id="skin.rocos" version="0.2.0" name="Roc OS" provider-name="Roc">
+  <requires>
+    <import addon="xbmc.gui" version="5.17.0" />
+    <import addon="script.skinshortcuts" version="0.4.0" />
+    <import addon="script.globalsearch" version="5.0.0" />
+    <import addon="script.image.resource.select" version="0.0.5" />
+    <import addon="resource.images.weathericons.white" version="0.0.6" />
+    <import addon="script.embuary.info" version="0.0.1" />
+    <import addon="script.embuary.helper" version="1.2.14" />
+    <import addon="plugin.video.themoviedb.helper" version="0.0.1" />
+    <import addon="script.rocui" version="0.1.0" optional="true" />
+  </requires>
+  <extension point="xbmc.gui.skin" debugging="false">
+    <res width="1920" height="1080" aspect="16:9" default="true" folder="None" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Roc OS — Eric's personal broadcast control room</summary>
+    <description lang="en">Roc OS is not a reskinned Kodi skin. It is a bespoke interface that merely runs on the Kodi engine: a living desktop of app tiles, pinned widgets, a floating glass dock with dwell flyouts, and a preview pane that shows what a thing is and does before you click. Phase 1: DESKTOP expression foundation, forked from the Arctic Zephyr donor.</description>
+    <platform>all</platform>
+    <license>GPL-3.0</license>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshot-01.jpg</screenshot>
+      <screenshot>resources/screenshot-02.jpg</screenshot>
+      <screenshot>resources/screenshot-03.jpg</screenshot>
+      <screenshot>resources/screenshot-04.jpg</screenshot>
+      <screenshot>resources/screenshot-05.jpg</screenshot>
+      <screenshot>resources/screenshot-06.jpg</screenshot>
+      <screenshot>resources/screenshot-07.jpg</screenshot>
+      <screenshot>resources/screenshot-08.jpg</screenshot>
+      <screenshot>resources/screenshot-09.jpg</screenshot>
+      <screenshot>resources/screenshot-10.jpg</screenshot>
+    </assets>
+    <news>0.2.0 — Phase 2 wiring for script.rocui: adult tile/dock stop route through the PIN gate (PIN set by Eric on-device at first use, salted hash only); Day/Midday/Night follows the clock automatically with the dock button as manual override; per-window focus memory (service); VPN shield surface in the dock (lit = tunnel really up, dim/red = off or unknown). 0.1.0 — Phase 1 foundation: DESKTOP home (app-tile grid, Continue Watching / Live Now / clock-weather widgets, focus preview pane), floating glass dock, Wrestling + Extras dwell flyouts, Day/Midday/Night wallpaper modes, Roc Gold color schemes.</news>
+  </extension>
+</addon>
+
+<addon id="script.rocui" version="0.1.0" name="Roc UI Helper" provider-name="Roc">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Roc OS helper: PIN gate, daypart clock, focus memory, VPN surface</summary>
+    <description lang="en">The engine room of Roc OS (skin.rocos). Runs as a service: keeps the Day/Midday/Night wallpaper on the clock, remembers the last focused item per window and restores it on return, publishes the real VPN tunnel state to the dock shield, and gates the adult door behind a PIN that Eric sets himself on the device (stored only as a salted PBKDF2 hash in this addon's profile data).</description>
+    <platform>all</platform>
+    <license>GPL-3.0</license>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news>0.1.0 — Phase 2: adult PIN gate (set-on-first-use, salted hash), automatic Day/Midday/Night with manual override from the dock button, per-window focus memory, VPN status surface (preparation; hardware both-states verification is an on-device phase).</news>
+  </extension>
+</addon>
+
 </addons>
