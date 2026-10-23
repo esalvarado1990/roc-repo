@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="repository.roc" name="Roc Repo" version="2.1.0" provider-name="Roc">
+<addon id="repository.roc" name="Roc Repo" version="2.2.0" provider-name="Roc">
   <extension point="xbmc.addon.repository" name="Roc Repo">
     <dir>
       <info compressed="true">https://esalvarado1990.github.io/roc-repo/addons.xml</info>
@@ -43,7 +43,30 @@
   </extension>
 </addon>
 
-<addon id="skin.rocos" version="0.3.0" name="Roc OS" provider-name="Roc">
+<addon id="plugin.video.iatheater" name="Internet Archive Theater" version="1.0.0" provider-name="PythonTrousers">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>audio video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Internet Archive Theater add-on</summary>
+    <description lang="en_GB">Heavily restructured, advanced version of the original Internet Archive addon to  watch and listen to media archived by Internet Archive</description>
+    <disclaimer lang="en_GB">This third party addon is not in any way commissioned or endorsed by Internet Archive</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GPL-3.0</license>
+    <forum></forum>
+    <website>https://archive.org/</website>
+    <email></email>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+<addon id="skin.rocos" version="0.4.0" name="Roc OS" provider-name="Roc">
   <requires>
     <import addon="xbmc.gui" version="5.17.0" />
     <import addon="script.skinshortcuts" version="0.4.0" />
