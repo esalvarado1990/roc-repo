@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="repository.roc" name="Roc Repo" version="3.0.0" provider-name="Roc">
+<addon id="repository.roc" name="Roc Repo" version="3.1.0" provider-name="Roc">
   <extension point="xbmc.addon.repository" name="Roc Repo">
     <dir>
       <info compressed="true">https://esalvarado1990.github.io/roc-repo/addons.xml</info>
@@ -66,7 +66,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="skin.rocos" version="0.6.0" name="Roc OS" provider-name="Roc">
+<addon id="skin.rocos" version="0.7.0" name="Roc OS" provider-name="Roc">
   <requires>
     <import addon="xbmc.gui" version="5.17.0" />
     <import addon="script.skinshortcuts" version="0.4.0" />
@@ -104,7 +104,7 @@
   </extension>
 </addon>
 
-<addon id="script.rocui" version="0.2.0" name="Roc UI Helper" provider-name="Roc">
+<addon id="script.rocui" version="0.2.1" name="Roc UI Helper" provider-name="Roc">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
   </requires>
