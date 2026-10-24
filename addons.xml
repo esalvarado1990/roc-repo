@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="repository.roc" name="Roc Repo" version="2.2.0" provider-name="Roc">
+<addon id="repository.roc" name="Roc Repo" version="2.2.1" provider-name="Roc">
   <extension point="xbmc.addon.repository" name="Roc Repo">
     <dir>
       <info compressed="true">https://esalvarado1990.github.io/roc-repo/addons.xml</info>
@@ -10,7 +10,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Roc's own Kodi repository</summary>
-    <description>Home of the Roc builds: Roc Gold, Haunted, Night Route, Noir Raven and Sesh Lounge, in Powerhouse, Medium and Lite tiers — all wearing Roc OS.</description>
+    <description>Home of the Roc builds: Roc Gold, Grin, Night Route, Noir Raven and Sesh Lounge, in Powerhouse, Medium and Lite tiers — all wearing Roc OS.</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -66,7 +66,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="skin.rocos" version="0.4.0" name="Roc OS" provider-name="Roc">
+<addon id="skin.rocos" version="0.4.1" name="Roc OS" provider-name="Roc">
   <requires>
     <import addon="xbmc.gui" version="5.17.0" />
     <import addon="script.skinshortcuts" version="0.4.0" />
@@ -79,7 +79,7 @@
     <import addon="script.rocui" version="0.2.0" optional="true" />
   </requires>
   <extension point="xbmc.gui.skin" debugging="false">
-    <res width="1920" height="1080" aspect="16:9" default="true" folder="None" />
+    <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Roc OS — Eric's personal broadcast control room</summary>
@@ -100,7 +100,7 @@
       <screenshot>resources/screenshot-09.jpg</screenshot>
       <screenshot>resources/screenshot-10.jpg</screenshot>
     </assets>
-    <news>0.3.0 — Phase 3 rooms: Cinema Room for Movies/TV tiles (opens as the mixed trending thumbnail grid — the grid is the tab; hero band reads the focused poster with plot, ratings and cast), War Room for Sports/WWE tiles (Mad Titan live-events board up top, WWE year scrubber 1990-now along the bottom driven by the 447-event timeline in script.rocui 0.2.0), and the Detail Stage — DialogVideoInfo re-authored Roc-style (poster, ratings with icons, cast, Play/Resume/Trailer/Trakt/More Like This rail). All Phase 1+2 behavior intact. 0.2.0 — Phase 2 wiring for script.rocui: adult tile/dock stop route through the PIN gate (PIN set by Eric on-device at first use, salted hash only); Day/Midday/Night follows the clock automatically with the dock button as manual override; per-window focus memory (service); VPN shield surface in the dock (lit = tunnel really up, dim/red = off or unknown). 0.1.0 — Phase 1 foundation: DESKTOP home (app-tile grid, Continue Watching / Live Now / clock-weather widgets, focus preview pane), floating glass dock, Wrestling + Extras dwell flyouts, Day/Midday/Night wallpaper modes, Roc Gold color schemes.</news>
+    <news>0.4.1 — LOAD FIX (2026-10-23): the skin's resolution declaration pointed at a folder named "None" (a Phase 1 generator bug — a Python None read from the wrong XML attribute and stringified into addon.xml), so Kodi refused to load the skin on real hardware ("Skin is missing some files") even though every file was present. folder now correctly names the 1080i folder. No other changes. 0.3.0 — Phase 3 rooms: Cinema Room for Movies/TV tiles (opens as the mixed trending thumbnail grid — the grid is the tab; hero band reads the focused poster with plot, ratings and cast), War Room for Sports/WWE tiles (Mad Titan live-events board up top, WWE year scrubber 1990-now along the bottom driven by the 447-event timeline in script.rocui 0.2.0), and the Detail Stage — DialogVideoInfo re-authored Roc-style (poster, ratings with icons, cast, Play/Resume/Trailer/Trakt/More Like This rail). All Phase 1+2 behavior intact. 0.2.0 — Phase 2 wiring for script.rocui: adult tile/dock stop route through the PIN gate (PIN set by Eric on-device at first use, salted hash only); Day/Midday/Night follows the clock automatically with the dock button as manual override; per-window focus memory (service); VPN shield surface in the dock (lit = tunnel really up, dim/red = off or unknown). 0.1.0 — Phase 1 foundation: DESKTOP home (app-tile grid, Continue Watching / Live Now / clock-weather widgets, focus preview pane), floating glass dock, Wrestling + Extras dwell flyouts, Day/Midday/Night wallpaper modes, Roc Gold color schemes.</news>
   </extension>
 </addon>
 
