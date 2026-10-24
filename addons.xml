@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="repository.roc" name="Roc Repo" version="2.2.2" provider-name="Roc">
+<addon id="repository.roc" name="Roc Repo" version="3.0.0" provider-name="Roc">
   <extension point="xbmc.addon.repository" name="Roc Repo">
     <dir>
       <info compressed="true">https://esalvarado1990.github.io/roc-repo/addons.xml</info>
@@ -66,7 +66,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="skin.rocos" version="0.5.0" name="Roc OS" provider-name="Roc">
+<addon id="skin.rocos" version="0.6.0" name="Roc OS" provider-name="Roc">
   <requires>
     <import addon="xbmc.gui" version="5.17.0" />
     <import addon="script.skinshortcuts" version="0.4.0" />
@@ -124,6 +124,20 @@
       <icon>icon.png</icon>
     </assets>
     <news>0.2.0 — Phase 3: WWE Timeline engine — the 447-event WWF/WWE PPV/PLE index (1990-2026) ships as resources/data/ppv_events.json and is served to the War Room scrubber (years rail + per-year events, date order) via a plugin source in this addon; the service also syncs the scrubber's rested year to the events pane. 0.1.0 — Phase 2: adult PIN gate (set-on-first-use, salted hash), automatic Day/Midday/Night with manual override from the dock button, per-window focus memory, VPN status surface (preparation; hardware both-states verification is an on-device phase).</news>
+  </extension>
+</addon>
+
+<addon id="script.rocprofiles" version="0.1.0" name="Roc Profiles" provider-name="Roc">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py" />
+  <extension point="xbmc.service" library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Roc OS household profiles — applicator and per-profile guard</summary>
+    <description lang="en">Applies the Roc household profile pack (E-Roc / Nue / Jamama / August) onto a v2.2.1 Roc Gold build using Kodi native profiles, and enforces per-profile rules at runtime: August's addon blocklist and settings/file-manager/addon-browser window guard, and the adult addon's per-profile disable outside E-Roc. No PIN is stored by this addon — profile locks and the adult PIN are set on-device by Eric.</description>
+    <platform>all</platform>
+    <license>GPL-3.0</license>
   </extension>
 </addon>
 
