@@ -66,7 +66,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="skin.rocos" version="0.9.0" name="Roc OS" provider-name="Roc">
+<addon id="skin.rocos" version="2.0.13" name="Roc OS" provider-name="Roc">
   <requires>
     <import addon="xbmc.gui" version="5.17.0" />
     <import addon="script.skinshortcuts" version="0.4.0" />
@@ -100,11 +100,11 @@
       <screenshot>resources/screenshot-09.jpg</screenshot>
       <screenshot>resources/screenshot-10.jpg</screenshot>
     </assets>
-    <news>0.5.0 — Home rebuilt to the poster-forward face Eric picked from the preview: Continue Watching + Trending Now poster rows over the identity art, one clean floating icon dock (Movies / TV Shows / Sports / WWE / Toons / Anime / Live TV / Music / Adult 18+). Content rooms simplified to one clean uniform poster grid in the Cinema HQ style; resting on a title pops a floating glass panel with its poster, description and ratings (the fixed hero band is gone). Content-view backgrounds re-framed — the character's face, dimmed behind the content; the torso center-crop is fixed. Jargon hint lines removed. Grin identity finalized: the Grin himself in every slot, ember-gold scheme. Everything else stands: PIN gate, Day/Midday/Night cycle with dock override, VPN shield, Music Room, War Room + WWE timeline, Detail Stage. 0.4.1 — LOAD FIX (2026-10-23): the skin's resolution declaration pointed at a folder named "None" (a Phase 1 generator bug — a Python None read from the wrong XML attribute and stringified into addon.xml), so Kodi refused to load the skin on real hardware ("Skin is missing some files") even though every file was present. folder now correctly names the 1080i folder. No other changes. 0.3.0 — Phase 3 rooms: Cinema Room for Movies/TV tiles (opens as the mixed trending thumbnail grid — the grid is the tab; hero band reads the focused poster with plot, ratings and cast), War Room for Sports/WWE tiles (Mad Titan live-events board up top, WWE year scrubber 1990-now along the bottom driven by the 447-event timeline in script.rocui 0.2.0), and the Detail Stage — DialogVideoInfo re-authored Roc-style (poster, ratings with icons, cast, Play/Resume/Trailer/Trakt/More Like This rail). All Phase 1+2 behavior intact. 0.2.0 — Phase 2 wiring for script.rocui: adult tile/dock stop route through the PIN gate (PIN set by Eric on-device at first use, salted hash only); Day/Midday/Night follows the clock automatically with the dock button as manual override; per-window focus memory (service); VPN shield surface in the dock (lit = tunnel really up, dim/red = off or unknown). 0.1.0 — Phase 1 foundation: DESKTOP home (app-tile grid, Continue Watching / Live Now / clock-weather widgets, focus preview pane), floating glass dock, Wrestling + Extras dwell flyouts, Day/Midday/Night wallpaper modes, Roc Gold color schemes.</news>
+    <news>2.0.13 - Publish train Leg 3 (2026-11-09): the .159-proven merged build (Music + Leftovers lanes, rocui_common 531beb2c, Home 42f516e2) published to the fleet channel; YouTube 7.4.4 joins the channel; Dailymotion out. 2.0.11 — Stage 3 SEASONS button (2026-11-05, Player Fix Lane, file-side; pairs with rocui 0.5.17, unchanged): new detail button 8005 SEASONS at left 1672, same row/geometry/styling as 8001–8004; visible on TV titles with a TmdbId (non-movie TmdbType); onclick RunScript(script.rocui,action=detail_seasons) guarded by System.HasAddon(script.rocui); nav chain extended 8004↔8005, 8005 is the row end. Closes the Stage 2 §5 gap (no SEASONS button existed despite the 0.5.10 rocui news implying one). All wiring is on-stick-unverified until .159 proof (gated on Eric's word). No .py file changed. 2.0.10 — Stage 2 skin wiring (2026-11-05, Player Fix Lane, file-side; pairs with rocui 0.5.17): detail PLAY (TV) routes through script.rocui detail_main_play when the helper is present, Helper-direct kept as fallback; 8001 label reads RocStage.MainLabel (PLAY / CONTINUE WATCHING) with a PLAY fallback; RESUME (8002) routes through the new detail_resume_play action (per-title history + source memory, PlayMedia fallback); SOURCES (8003, TV) passes season/episode to Helper play_using=select when staged; Movies hub 1111 now_playing/upcoming rows + VIEW MORE buttons point at script.rocui ?mode=movierow. All wiring is on-stick-unverified until .159 proof (gated on Eric's word). No SEASONS button added — none exists in the skin despite the 0.5.10 rocui news implying one. 0.10.0 — THE GRIN THEME (2026-10-28, Eric's order): Roc Gold is stripped as the build's theme identity; the Grin build is now the face of Roc OS. Palette sampled from the approved Grin art itself — black in its shades, dirty smoke-whites, grin-gold as the Grin's accent only, his body smoke worked into the glass, panels and transitions. The desktop glass law lands on the stick UI: the dock carries no solid backing, no pop-up (Continue Watching included) has a solid background — surfaces are relief and shade over the one picture, never a gray slab. Dock order now follows Eric's law: Grin first, TV immediately after. Playback layer untouched byte-for-byte. 0.5.0 — Home rebuilt to the poster-forward face Eric picked from the preview: Continue Watching + Trending Now poster rows over the identity art, one clean floating icon dock (Movies / TV Shows / Sports / WWE / Toons / Anime / Live TV / Music / Adult 18+). Content rooms simplified to one clean uniform poster grid in the Cinema HQ style; resting on a title pops a floating glass panel with its poster, description and ratings (the fixed hero band is gone). Content-view backgrounds re-framed — the character's face, dimmed behind the content; the torso center-crop is fixed. Jargon hint lines removed. Grin identity finalized: the Grin himself in every slot, ember-gold scheme. Everything else stands: PIN gate, Day/Midday/Night cycle with dock override, VPN shield, Music Room, War Room + WWE timeline, Detail Stage. 0.4.1 — LOAD FIX (2026-10-23): the skin's resolution declaration pointed at a folder named "None" (a Phase 1 generator bug — a Python None read from the wrong XML attribute and stringified into addon.xml), so Kodi refused to load the skin on real hardware ("Skin is missing some files") even though every file was present. folder now correctly names the 1080i folder. No other changes. 0.3.0 — Phase 3 rooms: Cinema Room for Movies/TV tiles (opens as the mixed trending thumbnail grid — the grid is the tab; hero band reads the focused poster with plot, ratings and cast), War Room for Sports/WWE tiles (Mad Titan live-events board up top, WWE year scrubber 1990-now along the bottom driven by the 447-event timeline in script.rocui 0.2.0), and the Detail Stage — DialogVideoInfo re-authored Roc-style (poster, ratings with icons, cast, Play/Resume/Trailer/Trakt/More Like This rail). All Phase 1+2 behavior intact. 0.2.0 — Phase 2 wiring for script.rocui: adult tile/dock stop route through the PIN gate (PIN set by Eric on-device at first use, salted hash only); Day/Midday/Night follows the clock automatically with the dock button as manual override; per-window focus memory (service); VPN shield surface in the dock (lit = tunnel really up, dim/red = off or unknown). 0.1.0 — Phase 1 foundation: DESKTOP home (app-tile grid, Continue Watching / Live Now / clock-weather widgets, focus preview pane), floating glass dock, Wrestling + Extras dwell flyouts, Day/Midday/Night wallpaper modes, Roc Gold color schemes.</news>
   </extension>
 </addon>
 
-<addon id="script.rocui" version="0.5.0" name="Roc UI Helper" provider-name="Roc">
+<addon id="script.rocui" version="0.6.1" name="Roc UI Helper" provider-name="Roc">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
   </requires>
@@ -123,7 +123,7 @@
     <assets>
       <icon>icon.png</icon>
     </assets>
-    <news>0.5.0 — v3.4.0 THE LOOK PASS: per-profile playback history store (Adult Continue Watching / History shelves + per-category stage Continue Watching ride it), the Collections engine for the stage's second row (Eric's named collections only: his Trakt lists, the Classics catalog, the wrestling eras, horror, Herbie), and the stage_folder click route for collection tiles. 0.4.0 — v3.3.0 THE AUDIT PASS (Roc Log, discovery honest core, Proton VPN route, install_app routes, mode_set). 0.2.0 — Phase 3: WWE Timeline engine — the 447-event WWF/WWE PPV/PLE index (1990-2026) ships as resources/data/ppv_events.json and is served to the War Room scrubber (years rail + per-year events, date order) via a plugin source in this addon; the service also syncs the scrubber's rested year to the events pane. 0.1.0 — Phase 2: adult PIN gate (set-on-first-use, salted hash), automatic Day/Midday/Night with manual override from the dock button, per-window focus memory, VPN status surface (preparation; hardware both-states verification is an on-device phase).</news>
+    <news>0.6.1 - Publish train Leg 3 (2026-11-09): the .159-proven merged build published to the fleet channel (merged rocui_common.py: Music L4-D5 + Leftovers L4-D1/D2/D8 union). 0.6.0 — THE GATE (Eric's law, 2026-11-05): on any stick on the Roc Repo channel, nothing plays in 2 states — (1) the VPN tunnel is not confirmed on, (2) a Roc Repo update is pending. The gate (new rocui_gate module, run by the service) compares installed Roc add-on versions against the channel's addons.xml at login and every 30 minutes, applies a pending update itself, and holds playback (route refusal + a service watchdog that stops any playback started by any route, previews included) until the update lands. A pending verdict is persisted, so a restart is not a skip. Repo unreachable with no pending verdict on file = update leg stays open (a no-network stick must not brick itself); VPN unconfirmed always blocks. Verdict published as Window(10000) RocGate.* properties for the skin. 0.5.17 — Stage 2 skin wiring (Player Fix Lane, 2026-11-05, file-side; deploy in an announced session; ON-STICK PROOF STILL OWED on .159 — nothing here has run on hardware): (1) Detail PLAY (TV) now routes through detail_main_play when script.rocui is present (Helper-direct play stays as the fallback when it is absent); movie and no-TmdbId branches unchanged. The 8001 label now reads RocStage.MainLabel (PLAY vs CONTINUE WATCHING) with a PLAY fallback, and stage_open/open_collection_title publish fresh Main* props for movies too, so a movie opened after a show can no longer inherit a stale CONTINUE WATCHING label. (2) New detail_resume_play action for the detail RESUME button: position and source come from the per-title history and per-title source memory for THIS title/episode (TV via show_progress_target, movies via the newest matching history entry under the same 45s/2% floors and 97%/90s finished rule) — the one-title global resume checkpoint is never consulted, so resuming a different title than last-played can no longer resume the wrong title; fallback is exactly the button's old PlayMedia(RocStage.Path) with the seek armed when a position is known. (3) Detail SOURCES (TV) now passes season/episode to TMDb Helper play_using=select when both are staged (verified against Helper 5.4.16's own code on disk: play_using forwards season/episode into Players, which builds the play_episode route from them; whether the live Helper+RocPlay pair actually offers the episode on .159 is still on-stick-unverified); movie branch unchanged, and a TV title without staged season/episode keeps the old no-param call. (4) Movies hub 1111: IN THEATERS NOW and COMING SOON rows plus both VIEW MORE buttons now point at plugin://script.rocui/?mode=movierow&amp;list=now_playing|upcoming (date-gated in 0.5.15/0.5.16) instead of the Helper's unfiltered info=now_playing/info=upcoming pass-through. NOT in this build: no SEASONS button — the 0.5.10 news implies one and detail_seasons exists, but no SEASONS control exists in the skin and none was added here; the TMDb Helper toast A/B/C pick is still Eric's, unanswered. Deploy notes carried from 0.5.16: the auto=1 player template only lands if the seeded roc_rocplay.json in TMDb Helper's players folder is replaced or deleted. 0.5.16 — Player Fix Lane, CONSOLIDATED build (merges the two 0.5.15 hand builds, Hand A items 1+4 and Hand B items 2a/2b/2c/3a/3b; file-side; deploy in an announced session): (1) Shows sources fix — stage_open and open_collection_title now mirror the computed TV target (fresh S1E1 / resume / next) into RocStage.Season/Episode when the staged item carried none, so the shipped detail window's PLAY button renders for show-level titles and fires Helper play with a real season/episode (0.5.14 published both empty for series posters; the detail PLAY TV branch gates on Episode, so a show page showed SOURCES only and that route dies in the Helper player assert). Episode rows that carry Season/Episode are never overwritten. (2) Movies hub rows date-gated — new rocui_common.movie_row_items + timeline ?mode=movierow&amp;list=upcoming|now_playing serve COMING SOON / IN THEATERS NOW filtered on each title's primary release_date (upcoming: after today; now_playing: within 45 days up to today), replacing the Helper's verbatim TMDB /movie/upcoming + /movie/now_playing pass-through that admitted re-release antiques (Dune 2021/2024 and A Beautiful Mind 2001 in COMING SOON, Nightmare Before Christmas 1993 in IN THEATERS NOW on .155, 2026-11-05); skin content-path swap is the wiring step. (3) Hand B, same pass: Roc Play auto-play — player templates now send auto=1 so one click fans out and plays the first healthy source with no picker (picker stays reachable from the OSD SOURCES button via the new rocui_playback.source_select route); per-title source memory (source_memory.json) so resume/detail-play returns to the remembered source at the remembered position instead of re-running the full hunt; service fullscreen enforcer (ActivateWindow(fullscreenvideo) once per file, &gt;4s in) restoring Select-to-OSD and the seek bar/time; seek applier reworked so a pending seek survives failover and is re-applied per attempt (expiry 600s to 1200s); final checkpoint on stop writes the exact leave position. DEPLOY NOTE: the auto=1 player template only lands on sticks if the seeded roc_rocplay.json in TMDb Helper players folder is replaced or deleted — existing sticks already hold the old file. Skin 2.0.9 (separate tree): dock UP chain repaired (dock to stage row to search bar), self-loop onups removed; new sounds/ package (nav/select/back ticks) so the skin is self-sufficient for click sounds. 0.5.13 — TV collection-detail fix (Loop 131, file-side; deploy in an announced session): open_collection_title now ends the plugin directory (succeeded=False, collection page stays underneath) BEFORE activating the detail window (1124), with a bounded 20-attempt activation retry. 0.5.12 activated from inside the outstanding directory call, while Kodi still held its busy dialog for that call, and the activation was refused as long as that modal dialog was up (10x cross-session for TV titles on the Classics-WB page, Loops 128/130, while the faster movie call opened in the same run) — the discriminator is call duration inside the directory dispatch, not TV code, since the TV branch runs after activation. Every return path ends the directory exactly once. stage_open is byte-untouched. 0.5.12 — Collection-page click fix, round 3 (Loop 122, file-side; deploy in an announced session): a collection page's title rows are folders into this plugin's own detail mode, and the new open_collection_title performs the stage_open-identical RocStage publish into the detail window (1124). The 0.5.7 leaf carrying the TMDb Helper details route could never be dispatched by the Videos window's built-in activation (not a folder, no IsPlayable) and the route itself only returns Helper's basedir listing — the click was inert by construction (Loops 110/118/119b). Everything else is 0.5.11 unchanged. 0.5.11 — Collection-page click fix (Loop 117, file-side; deploy in an announced session): plugin directories for title collections now declare movies/tvshows content instead of "videos", so the skin's primary Videos list (panel 50) renders them -- with "videos" panel 50 was invisible, defaultcontrol 50 failed to focus, and the fallback view's items did not activate on ENTER/DPAD_CENTER (Loop 110 step 5). Collections tiles pages for movies/tv categories declare their type the same way; every other directory is unchanged. 0.5.10 — Resume-PLAY detail fix (Loop 116, file-side; deploy in an announced session): detail_main_play now wins the show-page main button whenever stage_open published a resume target, so warm show titles no longer route to Helper with enriched latest Season/Episode infolabels (Loop 110's 3/25 AttributeError); the detail label shows the published target even when Episode infolabels are present; SEASONS button visibility matches detail_seasons()'s guard (TV title + TmdbId) so it renders for streamed shows, hidden only where the RESUME button shows (same spot); the detail_main_play success toast is removed per Eric 2026-11-02 06:49. 0.5.9 — Resume-PLAY skin wiring, rocui half: new detail_seasons action drives the season/episode dialogs from the detail page itself (RocStage.TmdbId, nothing playing required) for the skin SEASONS button built alongside it; detail_main_play and all 0.5.8 behaviour unchanged. 0.5.8 — Resume-PLAY (Eric Nov 1 10:07/10:32): the show-page main button now follows progress — no progress reads PLAY and starts S1E1, progress reads CONTINUE WATCHING and resumes his spot, a credits-reached episode reads CONTINUE WATCHING the NEXT episode. The target is computed from the playback history store (both profile and master stores are read, newest collapsed entry wins; finished = remaining &lt;= 90s or pct &gt;= 97%; progress counts only above 45s and 2%), recomputed fresh at click time by the new detail_main_play action, and published by stage_open as RocStage.MainLabel/Target props for TV titles. Skin Detail wiring (label $INFO + onclick + seasons button) is a separate file change and is NOT in this build. Movies keep their PLAY+RESUME pair. 0.5.7 — Poster-click route rework: a collection's titles are now served as real title posters (TMDB poster art plus the title's tmdb_id/tmdb_type as item properties) whose click path is that title's own TMDb Helper details route — no search fallback for a poster (a title that cannot resolve is left off the shelf and retries next build), and the rows are leaf items, not folders, so the click opens the title instead of navigating into a listing. Collection tiles still open their collection, whose page now renders those posters. Everything 0.5.6 carried is unchanged: the typed tmdb_type routes, the Roc Play player seed, and the Trakt slug living only in the trakt_user_slug setting. 0.5.6 — Trakt identity scrub: the Trakt user slug is no longer carried in the code. It is read from this addon's own trakt_user_slug setting (empty by default): on Eric's fleet a settings seed dropped into the addon's profile data at deploy time keeps his Trakt collections working; anywhere else the Trakt shelves simply do not appear. No other behaviour changes — the 0.5.5 click-route fix and the Roc Play player seed are unchanged. 0.5.5 — Click-route fix: every title link into TMDb Helper now carries the tmdb_type its 5.4.16 routes require (0.5.4's untyped search URL raised a TypeError inside the Helper — the error toast that killed every collection title click on the room stick); titles that resolve to a TMDB id open that title's own Helper page directly instead of a search; Discovery and the source re-pick fallback are typed the same way; and the service seeds the Roc Play player file into TMDb Helper's players folder when absent (never overwriting an existing one) so the play hop has its player on fresh installs. 0.5.1 — Collections art fix: stage collection tiles carry a representative title's TMDB poster as poster+thumb art (resolved via the addon's TMDB mini-client, cached in the profile data) instead of the badge alone, which the row layouts never render. 0.5.0 — v3.4.0 THE LOOK PASS: per-profile playback history store (Adult Continue Watching / History shelves + per-category stage Continue Watching ride it), the Collections engine for the stage's second row (Eric's named collections only: his Trakt lists, the Classics catalog, the wrestling eras, horror, Herbie), and the stage_folder click route for collection tiles. 0.4.0 — v3.3.0 THE AUDIT PASS (Roc Log, discovery honest core, Proton VPN route, install_app routes, mode_set). 0.2.0 — Phase 3: WWE Timeline engine — the 447-event WWF/WWE PPV/PLE index (1990-2026) ships as resources/data/ppv_events.json and is served to the War Room scrubber (years rail + per-year events, date order) via a plugin source in this addon; the service also syncs the scrubber's rested year to the events pane. 0.1.0 — Phase 2: adult PIN gate (set-on-first-use, salted hash), automatic Day/Midday/Night with manual override from the dock button, per-window focus memory, VPN status surface (preparation; hardware both-states verification is an on-device phase).</news>
   </extension>
 </addon>
 
@@ -139,6 +139,141 @@
     <platform>all</platform>
     <license>GPL-3.0</license>
   </extension>
+</addon>
+
+<addon id="plugin.video.youtube" name="YouTube" version="7.4.4" provider-name="anxdpanic, bromix, MoojMidge">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.27.1"/>
+        <import addon="inputstream.adaptive" version="19.0.0"/>
+        <import addon="script.module.inputstreamhelper" version="0.2.2" optional="true"/>
+        <import addon="script.module.pysocks" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/plugin.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="resources/lib/service.py"/>
+    <extension point="xbmc.python.module" library="resources/lib/"/>
+    <extension point="xbmc.python.script" library="resources/lib/script.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
+        </assets>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum>https://ytaddon.panicked.xyz/forum</forum>
+        <website>https://www.youtube.com</website>
+        <source>https://github.com/anxdpanic/plugin.video.youtube</source>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="bg_BG">Добавка за YouTube</summary>
+        <summary lang="bs_BA">Dodatak za YouTube</summary>
+        <summary lang="cs_CZ">Plugin pro YouTube</summary>
+        <summary lang="da_DK">Plugin til YouTube</summary>
+        <summary lang="de_DE">Plugin für YouTube</summary>
+        <summary lang="el_GR">Πρόσθετο για το YouTube</summary>
+        <summary lang="en_GB">Plugin for YouTube</summary>
+        <summary lang="eo">Aldonaĵo por YouTube</summary>
+        <summary lang="es_ES">Complemento para YouTube</summary>
+        <summary lang="es_MX">Complemento para YouTube</summary>
+        <summary lang="et_EE">YouTube lisamoodul</summary>
+        <summary lang="fi_FI">YouTube-lisäosa</summary>
+        <summary lang="fr_FR">Plugin pour YouTube</summary>
+        <summary lang="ga">Breiseán do YouTube</summary>
+        <summary lang="he_IL">תוסף עבור YouTube</summary>
+        <summary lang="hr_HR">Dodatak za YouTube</summary>
+        <summary lang="hu_HU">YouTube kiegészítő</summary>
+        <summary lang="id_ID">Pengaya untuk YouTube</summary>
+        <summary lang="it_IT">Plugin per YouTube</summary>
+        <summary lang="ko_KR">유튜브 플러그인</summary>
+        <summary lang="nb_NO">Tillegg for YouTube</summary>
+        <summary lang="nl_NL">Plugin voor YouTube</summary>
+        <summary lang="pl_PL">Wtyczka YouTube</summary>
+        <summary lang="pt_BR">Plugin para YouTube</summary>
+        <summary lang="ro_RO">Modul pentru YouTube</summary>
+        <summary lang="ru_RU">Видеодополнение YouTube</summary>
+        <summary lang="sk_SK">Doplnok pre YouTube</summary>
+        <summary lang="sv_SE">Insticksmodul för YouTube</summary>
+        <summary lang="tr_TR">YouTube için eklenti</summary>
+        <summary lang="uk_UA">Додаток для YouTube</summary>
+        <summary lang="vi_VN">Plugin dành cho YouTube</summary>
+        <summary lang="zh_CN">油管插件</summary>
+        <summary lang="zh_TW">YouTube附加元件</summary>
+        <description lang="bg_BG">YouTube е един от най-големите уеб сайтове за споделяне на видео в целия свят.</description>
+        <description lang="bs_BA">YouTube je jedna od najvećih svjetskih web stranica za dijeljenje videozapisa.</description>
+        <description lang="cs_CZ">YouTube je jedna z největších webových stránek světa sdílející video.</description>
+        <description lang="da_DK">YouTube er et af verdens største videodelingswebsteder.</description>
+        <description lang="de_DE">YouTube ist eines der größten Video-Sharing-Websites der Welt.</description>
+        <description lang="el_GR">Το YouTube είναι μία από τις μεγαλύτερες ιστοσελίδες διαμοιρασμού βίντεο στον κόσμο.</description>
+        <description lang="en_GB">YouTube is one of the biggest video-sharing websites of the world.</description>
+        <description lang="es_ES">YouTube es uno de los sitios web para compartir vídeos más grandes del mundo.</description>
+        <description lang="es_MX">YouTube es uno de los más grandes sitios web de intercambio de videos del mundo.</description>
+        <description lang="fi_FI">YouTube on yksi maailman suurimmista videoiden jakosivustoista.</description>
+        <description lang="fr_FR">YouTube est l'un des plus grands sites de partage vidéos du monde.</description>
+        <description lang="he_IL">YouTube הוא אחד מאתרי שיתוף הווידאו הגדולים בעולם.</description>
+        <description lang="hr_HR">YouTube je jedna od najvećih stranica za dijeljenje video sadržaja na svijetu.</description>
+        <description lang="hu_HU">A YouTube világ egyik legnagyobb videómegosztó weboldala.</description>
+        <description lang="id_ID">YouTube adalah salah satu situs web berbagi video terbesar di dunia.</description>
+        <description lang="it_IT">YouTube è uno dei più grandi siti di condivisione video del mondo.</description>
+        <description lang="ko_KR">유튜브는 세상에서 가장 큰 동영상 공유 사이트 중의 하나입니다.</description>
+        <description lang="nb_NO">YouTube er en av verdens største nettsider for videodeling.</description>
+        <description lang="nl_NL">YouTube is een van de grootste videodelenwebsite in de hele wereld.</description>
+        <description lang="pl_PL">YouTube jest jednym z największych na świecie serwisów udostępniania wideo.</description>
+        <description lang="pt_BR">O YouTube é um dos maiores sites de compartilhamento de vídeos do mundo.</description>
+        <description lang="ro_RO">YouTube este unul dintre cele mai mari saituri de distribuire de videoclipuri din lume.</description>
+        <description lang="ru_RU">YouTube - популярнейший видеохостинговый сайт, предоставляющий пользователям услуги хранения, доставки и показа видео.</description>
+        <description lang="sk_SK">YouTube je jednou z najväčších stránok na zdieľanie videa na svete.</description>
+        <description lang="sv_SE">YouTube är en av världens största webbplatser för videodelning.</description>
+        <description lang="tr_TR">YouTube, dünya üzerindeki en büyük video paylaşma platformlarından birisidir.</description>
+        <description lang="uk_UA">YouTube є одним з найбільших відеохостингів в світі.</description>
+        <description lang="vi_VN">YouTube là một trong những trang web chia sẻ video lớn nhất trên thế giới.</description>
+        <description lang="zh_CN">油管是世界上最大的视频分享网站之一。</description>
+        <description lang="zh_TW">Youtube 是全世界最大的影片分享網站。</description>
+        <disclaimer lang="bs_BA">Ovaj dodatak nije odobren od strane Googlea</disclaimer>
+        <disclaimer lang="cs_CZ">Tento plugin není schválen společností Google</disclaimer>
+        <disclaimer lang="da_DK">Dette plugin er ikke godkendt af Google</disclaimer>
+        <disclaimer lang="de_DE">Dieses Plugin ist nicht von Google befürwortet</disclaimer>
+        <disclaimer lang="el_GR">Η παρούσα μικροεφαρμογή δεν έχει υϊοθετηθεί από την Google</disclaimer>
+        <disclaimer lang="en_GB">This plugin is not endorsed by Google</disclaimer>
+        <disclaimer lang="eo">Tiu aldonaĵo ne estas aprobita de Google</disclaimer>
+        <disclaimer lang="es_ES">Este add-on no está respaldado por Google</disclaimer>
+        <disclaimer lang="es_MX">Este complemento no está respaldado por Google</disclaimer>
+        <disclaimer lang="fi_FI">Google ei tue tätä lisäosaa</disclaimer>
+        <disclaimer lang="fr_FR">Ce module n'est pas validé par Google</disclaimer>
+        <disclaimer lang="hr_HR">Ovaj dodatak nije podržan od strane Googlea</disclaimer>
+        <disclaimer lang="id_ID">Plugin ini tidak didukung oleh Google</disclaimer>
+        <disclaimer lang="it_IT">Questo plugin non è approvato da Google</disclaimer>
+        <disclaimer lang="ko_KR">이 플러그인은 Google의 허가를 받지 않았습니다</disclaimer>
+        <disclaimer lang="nl_NL">Deze plug-in wordt niet door Google ondersteund</disclaimer>
+        <disclaimer lang="pl_PL">Ta wtyczka nie jest zatwierdzona przez Google</disclaimer>
+        <disclaimer lang="pt_BR">Este plugin não é recomendado pelo Google</disclaimer>
+        <disclaimer lang="ro_RO">Acest modul nu este susținut de Google</disclaimer>
+        <disclaimer lang="ru_RU">Плагин не поддерживается Google</disclaimer>
+        <disclaimer lang="sk_SK">Tento doplnok nie je schválený spoločnosťou Google</disclaimer>
+        <disclaimer lang="sv_SE">Denna insticksmodul är inte godkänd av Google</disclaimer>
+        <disclaimer lang="tr_TR">Bu eklenti Google tarafından üretilmemiştir</disclaimer>
+        <disclaimer lang="uk_UA">Цей додаток не має відношення до компанії Google</disclaimer>
+        <disclaimer lang="vi_VN">Plugin này không được xác nhận bởi Google</disclaimer>
+        <disclaimer lang="zh_CN">此插件未被谷歌认可</disclaimer>
+        <disclaimer lang="zh_TW">此附加元件未由Google支持</disclaimer>
+    <news>## v7.4.4
+### Fixed
+- Fix not including FolderPath in current container details
+- Fix current plugin item window properties sometimes not updating correctly
+- Fix not updating remote history upon consecutive playback events for certain video types
+- Fix using unimplemented change to localisation identifier when showing API config page address
+- Fix play uri parameters/properties not being able to be forced off
+- Limit retrying feeds that cannot be accessed
+
+### Changed
+- Improve responsiveness of service loop upon plugin invocation
+- Log redacted visitorData details
+- More aggressively utilise cached data for My Subscriptions feed failures
+
+### New
+- Add option to play YouTube error notification video upon playback failure</news></extension>
 </addon>
 
 </addons>
