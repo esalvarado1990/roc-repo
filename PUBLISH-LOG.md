@@ -12,3 +12,6 @@
 
 ## 2026-11-10 — Raven Removal re-drive
 Commit bfa5114 (skin.rocos 2.0.20 raven-removal re-publish, zip md5 9cec62174fb5078d10620718ee99b430, addons.xml md5 f088c1edacf37d72f2e1c4ddf89f34fb) pushed clean, but the GitHub Pages deploy did not land: 9 live fetches over ~12 min all still served the old addons.xml (50e37e931a021eeb7c2b2d4ffc428886). This note commit re-triggers the Pages build+deploy; payload unchanged.
+
+## 2026-11-10 — Launch train FINAL: skin 2.0.23 (stamp revision) + rocui 0.6.8
+Supersedes the interim launch commit 82b831c (reverted in 84a7c4c before any stick installed): Eric's 12:10 stamp call replaced the picker art. Final skin.rocos-2.0.23 = 2.0.21 looks dedup + 2.0.22 VPN region label + STAMP picker medallions (picker-eroc 1b3316a7 ember-gold studded ring, picker-august 54dd7d86 pearl ring; girls untouched), zipped from the icon-fix stage tree in the exact 2.0.22 package shape: 695 entries, md5 96ae379fdd2c1ae4856e19a5780e2060; diff vs 2.0.22 = addon.xml + the 2 picker files only. script.rocui 0.6.8 md5 7e865fe14fcf5f79bc9fd2a575586a4b (news XML escape fix applied pre-publish; code byte-identical to the staged build). Fleet install follows immediately per UPDATE GATE LAW.
