@@ -26,3 +26,5 @@ Re-drive note 2 (2026-11-10): the R2 correction commit 1a67586 (skin zip md5 49d
 R3 correction (2026-11-10): skin zip swapped to the round-3 E-Roc stamp build (zip md5 148c352f0c83de93a2489c3cf7b70889; single-entry swap picker-eroc -> b92cdf1d; addons.xml unchanged, md5 eac4cc8c). Supersedes the R2 zip 49d9aa95 before any stick pulled it. Fleet installs must verify the picker-eroc md5 on-device (b92cdf1d), not the zip md5.
 
 R4 correction (2026-11-10): skin zip swapped to the round-4 build (zip md5 9c003e9bc7456ae817c090c2694f45fc; diff vs R3 = the 4 picker entries only — real transparency outside the rings: picker-eroc 3225f434, picker-august d027bbfd, picker-nue 00a70729, picker-jama a2ce3da1; addons.xml unchanged, md5 eac4cc8c). Supersedes R3 148c352f. Fleet installs verify picker md5s on-device.
+
+R5 correction (2026-11-10): skin zip swapped to the round-5 smoky-edge build (zip md5 04a1c3975defaad8d5f81b2052286b5d; diff vs R4 = picker-eroc e4e586e1 + picker-august de80e8f7 only; girls byte-untouched; addons.xml unchanged, md5 eac4cc8c). Supersedes R4 9c003e9b. Fleet installs verify picker md5s on-device.
