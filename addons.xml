@@ -66,7 +66,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="skin.rocos" version="2.0.23" name="Roc OS" provider-name="Roc">
+<addon id="skin.rocos" version="2.0.24" name="Roc OS" provider-name="Roc">
   <requires>
     <import addon="xbmc.gui" version="5.17.0" />
     <import addon="script.skinshortcuts" version="0.4.0" />
@@ -104,7 +104,7 @@
   </extension>
 </addon>
 
-<addon id="script.rocui" version="0.6.8" name="Roc UI Helper" provider-name="Roc">
+<addon id="script.rocui" version="0.7.0" name="Roc UI Helper" provider-name="Roc">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
   </requires>
