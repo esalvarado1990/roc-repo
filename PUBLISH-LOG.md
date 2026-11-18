@@ -1,5 +1,8 @@
 # Roc Repo — publish log
 
+## 2026-11-18 — Settled fleet build: skin 2.0.39 / rocui 0.7.17 / rocplay 0.2.19 / rocsync 0.1.5 (first carriage)
+The fleet wave (Eric's word 2026-11-18 11:05) settled all 3 sticks on this build; this publish closes the vault-audit gap (fleet build previously in no published repo). skin.rocos-2.0.39 zip md5 473601d7b4554f1d984651c2763946a8 (713 entries, zipped from the live tree pulled off the living-room stick .154 — the bundle tree's skin is a later contaminated lineage and was NOT used; addon.xml md5 6d23a206a7aa5bf093e65389bf84e637, Home.xml md5 dca2c8f47661c0e83e1062947138db60). script.rocui-0.7.17 zip md5 02f8e9268a6c97ac81c679ff7a8fe005 (14 entries, bundle tree + the shared fleet icon.png its addon.xml declares). plugin.video.rocplay-0.2.19 zip md5 d12cc51bcf4f8f8d0a99f0d4a289ffe9 (16 entries, bundle tree with resources/lib/wells/vidsrc.py taken from the verified stage-lib copy md5 dc9e25164bf59d90da891d12dfba20a1 — the bundle tree's own copy is stale; tokenloader.py md5 bb4785cfd9d0f626740fe5fb9dae7104). service.rocsync-0.1.5 zip md5 f8aa6e1848db2d2ac64ebeae5823b5e3 (9 entries) — FIRST repo carriage of service.rocsync, following the rocplay first-carriage precedent; carries its original icon.png (md5 a283efc21453751b3fe8fc24df65664a, the shared fleet icon). addons.xml md5 ba19326be055212c419ba0de46594983. Skin 2.0.41/2.0.42 do NOT ride this publish (separate later wave).
+
 - 2026-11-10 (MST): August Wall Completion re-publish landed in
   commit ca4285b — script.rocui 0.6.7 zip md5
   8ad74b5d3c9749e0c3389209e8d3a7ee (trending feed fix +
